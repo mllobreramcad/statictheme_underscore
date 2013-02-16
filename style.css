@@ -100,10 +100,12 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: calibri, sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
+	width: 90%;
+	margin: 20px auto;
 }
 
 /* Headings */
@@ -307,15 +309,16 @@ textarea {
 
 /* Links */
 a {
-	color: royalblue;
+	color: #7C0253;
+	text-decoration: none;
 }
 a:visited {
-	color: purple;
+	color: #7C0253;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #777;
 }
 
 /* Alignment */
@@ -341,6 +344,40 @@ a:active {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 }
+
+
+
+/* =Masthead
+----------------------------------------------- */
+
+.site-title {
+	font-family: 'orator std', sans-serif;
+	font-weight: 400;
+	font-size: 4em;
+	text-align: left;
+	margin-bottom: 0px;
+	background-color: black;
+	color: white;
+}
+
+.site-title a {
+	color: white;
+	text-decoration: none;
+}
+
+.site-title a:hover {
+	color: #BBB;
+	text-decoration: none;
+}
+
+.site-description {
+	visibility: hidden;
+	position: absolute;
+}
+
+
+
+
 
 
 /* =Menu
@@ -415,8 +452,32 @@ a:active {
 .hentry {
 	margin: 0 0 1.5em;
 }
+
+.post {
+	width: 60%;
+	max-width: 27.8125em;
+	margin-left: auto;
+	margin-right: 250px;
+	margin-bottom: 60px;
+}
+
+.entry-title, .entry-title a {
+	font-family: 'orator std', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	color: #BBB;
+	margin-bottom: 0px;
+	text-decoration: none;
+	text-align: left;
+}
+
+.entry-title a:hover {
+	color: black;
+}
+
 .entry-meta {
 	clear: both;
+	margin-bottom: 20px;
 }
 .byline {
 	display: none;
@@ -427,7 +488,6 @@ a:active {
 }
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
 }
 .page-links {
 	clear: both;

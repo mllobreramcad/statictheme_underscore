@@ -13,6 +13,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<?php the_post_thumbnail(); ?>
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'statictheme_underscore' ), 'after' => '</div>' ) ); ?>
 		<?php edit_post_link( __( 'Edit', 'statictheme_underscore' ), '<span class="edit-link">', '</span>' ); ?>
